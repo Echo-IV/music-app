@@ -25,7 +25,7 @@ const initialState = {
   playlist: []
 }
 
-const MusicReducer = (state = initialState, action = {}) => {
+const MusicTableReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case GET_MUSIC_REQUEST:
       return {
@@ -45,4 +45,4 @@ const MusicReducer = (state = initialState, action = {}) => {
   }
 }
 
-export default MusicReducer
+export default MusicTableReducer
