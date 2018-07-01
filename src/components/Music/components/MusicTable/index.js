@@ -6,7 +6,7 @@ import {
   TableCell,
   TableHead,
   TableRow
-} from '@material-ui/core/Table'
+} from '@material-ui/core'
 
 export default class MusicTable extends Component {
   render() {
