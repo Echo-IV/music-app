@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { number, string, arrayOf, node, exact } from 'prop-types'
+import { number, string, func, arrayOf, node, exact } from 'prop-types'
 import {
   Table,
   TableBody,
@@ -18,11 +18,20 @@ export default class MusicTable extends Component {
         src: string
       })
     ),
-    actionIcon: node.required
+    actionIcon: node,
+    play: func
   }
 
   static defaultProps = {
-    music: []
+    music: [],
+    actionIcon: null,
+    play: () => undefined
+  }
+
+  handleClickPlayButton = src => {
+    const { play } = this.props
+
+    play(src)
   }
 
   renderMusicList = () => {
@@ -34,7 +43,9 @@ export default class MusicTable extends Component {
           {song.name}
         </TableCell>
         <TableCell>
-          <Button>Play</Button>
+          <Button onClick={() => this.handleClickPlayButton(song.src)}>
+            Play
+          </Button>
         </TableCell>
         <TableCell>
           <Button>

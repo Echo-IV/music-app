@@ -5,11 +5,11 @@ const MusicReducer = (state = [], action = {}) => {
     case PLAY_MUSIC:
       return {
         ...state,
-        music: action.music
+        selectedMusic: action.selectedMusic
       }
     default:
       return state
   }
 }
 
-export default Music
+export default MusicReducer

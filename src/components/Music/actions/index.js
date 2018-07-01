@@ -1,6 +1,6 @@
 import { PLAY_MUSIC } from '../actionTypes'
 
-export const playMusic = music => ({
+export const playMusic = selectedMusic => ({
   type: PLAY_MUSIC,
-  music
+  selectedMusic
 })

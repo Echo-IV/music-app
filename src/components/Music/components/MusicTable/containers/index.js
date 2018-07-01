@@ -2,9 +2,9 @@ import MusicTable from '../'
 import { connect } from 'react-redux'
 import { getMusic, addMusic, removeMusic } from '../actions'
 
-const mapStateToProps = ({ music }) => ({
-  music: music.musicList,
-  playlist: music.playlist
+const mapStateToProps = ({ musicTable }) => ({
+  music: musicTable.musicList,
+  playlist: musicTable.playlist
 })
 
 const mapDispatchToProps = {

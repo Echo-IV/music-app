@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Music from '../Music'
+import MusicContainer from '../Music/containers'
 
 class App extends Component {
   render() {
     return (
       <Router>
         <Switch>
-          <Route path="/music" component={Music} />
+          <Route path="/music" component={MusicContainer} />
         </Switch>
       </Router>
     )

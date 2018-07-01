@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { string } from 'prop-types'
 
+import Test from '../../../../music/cold.mp3'
+
 export default class Player extends Component {
   static propTypes = {
     src: string

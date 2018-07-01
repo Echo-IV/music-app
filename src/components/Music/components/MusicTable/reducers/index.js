@@ -9,17 +9,17 @@ const initialState = {
     {
       id: 1,
       name: 'Mecha Maiko - Cold (feat. Dana Jean Phoenix)',
-      src: '../../music/cold.mp3'
+      src: '../../../../music/cold.mp3'
     },
     {
       id: 2,
       name: 'Slaves - Sockets',
-      src: '../../music/sockets.mp3'
+      src: '../../../../music/sockets.mp3'
     },
     {
       id: 3,
       name: 'Porter Robinson & Madeon - Shelter',
-      src: '../../music/shelter.mp3'
+      src: '../../../../music/shelter.mp3'
     }
   ],
   playlist: []
