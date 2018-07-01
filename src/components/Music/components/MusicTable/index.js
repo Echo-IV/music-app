@@ -18,8 +18,11 @@ export default class MusicTable extends Component {
         src: string
       })
     ),
-    actionIcon: node,
-    label: string
+    actionIcon: node.required
+  }
+
+  static defaultProps = {
+    music: []
   }
 
   renderMusicList = () => {
